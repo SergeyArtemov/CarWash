@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>be788511-b8b1-4a6b-b298-e72556908e19</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarWash.Database\CarWash.Database.csproj" />
+    <ProjectReference Include="..\CarWash.Service\CarWash.Service.csproj" />
+  </ItemGroup>
+
+</Project>

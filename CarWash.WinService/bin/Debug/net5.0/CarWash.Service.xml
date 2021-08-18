@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CarWash.Service</name>
+    </assembly>
+    <members>
+        <member name="M:CarWash.Service.Comestero.ComesteroWashClient.GetMashines">
+            <summary>
+            Полный список доступных устройств
+            </summary>
+            <returns>Список доступных устройств</returns>
+        </member>
+        <member name="M:CarWash.Service.Comestero.ComesteroWashClient.SendCredits(System.String,System.Decimal,System.Decimal,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Метод зачисления кредитов на устройство.
+            </summary>
+            <param name="serial">Серийный номер устройства (из GetMachines)</param>		
+            <param name="amount">Количество кредитов для зачесления (фактическая облата)</param>
+            <param name="bonusAmount">Количество кредитов для зачесления (бонусы)</param>
+            <param name="cellId">Id ячейки на панели (для портальных моек, получется из GetCells)</param>
+            <param name="postId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CarWash.Service.Controllers.CarWashController.CarWash(System.String,CarWash.Service.Models.IdModel)">
+            <summary>
+            Получение информации о мойке (s/n etc.)
+            </summary>
+            <param name="header">Токен авторизации</param>
+            <param name="request">Запрос с ID мойки.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CarWash.Service.Controllers.CarWashController.GetCells(System.String,CarWash.Service.Models.SerialModel)">
+            <summary>
+            Плучение списка программ для портальной мойки
+            </summary>		
+            <param name="request">Запрос с серийным номером портальной мойки.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CarWash.Service.Controllers.CarWashController.GetAllCells(System.String)">
+            <summary>
+            Получить полный список программ всех портальных моек.
+            </summary>
+            <param name="header"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CarWash.Service.Controllers.CarWashController.SendCredits(System.String,System.String,System.Decimal,System.Decimal,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Зачисление кредитов на мойку.
+            </summary>
+            <param name="serial">Серийный номер устройства.</param>		
+            <param name="amount">Количество кредитов (фактическая облата).</param>
+            <param name="bonusAmount">Количество кредитов (бонусы).</param>
+            <param name="cellId">Id ячейки с программой (для портальных моек обязательно).</param>
+            <param name="postId">Id поста (необязательно).</param>
+            <returns>Событие со статусом IN_PROGRESS. Позже статус сменится на ОК или ERROR. Проверять методом GetEventResponse(event_id, sn)</returns>
+        </member>
+        <member name="M:CarWash.Service.Controllers.CarWashController.GetGetEventResponse(System.String,System.Int32,System.String)">
+            <summary>
+            Проверка статуса зачисления кредитов
+            </summary>
+            <param name="header"></param>
+            <param name="eventId">EventId, полученное в методе начисления кредитов.</param>
+            <param name="sn">Серийный номер устройства (необязательно).</param>
+            <returns></returns>
+        </member>
+        <member name="M:CarWash.Service.Controllers.CarWashController.GetMachines(System.String)">
+            <summary>
+            Получение списка устройств.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

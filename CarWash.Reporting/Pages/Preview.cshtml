@@ -1,0 +1,66 @@
+﻿@page
+
+@model CarWash.Reporting.Pages.Income.PreviewModel
+
+@{
+    ViewData["Title"] = "йцу";
+    var data = Model.Data;
+}
+
+<div class="container">
+    <table id="results-table" class="table table-hover">
+        <thead>
+            <tr>
+                <th>АЗС</th>
+                @foreach (var record in data.Records.FirstOrDefault()?.RecordData)
+                {
+                    <th>@record.Interval</th>
+                }
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var record in data.Records)
+            {
+                <tr>
+                    <td>
+                        @record.StationNumber
+                    </td>
+                    @foreach (var rd in record.RecordData)
+                    {
+                        <td>
+                            @rd.BankMobile
+                        </td>
+                        <td>
+                            @rd.BankMobilePercents
+                        </td>
+                        <td>
+                            @rd.BankTerminal
+                        </td>
+                        <td>
+                            @rd.BankTerminalPercents
+                        </td>
+                        <td>
+                            @rd.BonusPoints
+                        </td>
+                        <td>
+                            @rd.BonusPointsPercents
+                        </td>
+                        <td>
+                            @rd.Cash
+                        </td>
+                        <td>
+                            @rd.CashPercents
+                        </td>
+                        <td>
+                            @rd.Change
+                        </td>
+                        <td>
+                            @rd.Total
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

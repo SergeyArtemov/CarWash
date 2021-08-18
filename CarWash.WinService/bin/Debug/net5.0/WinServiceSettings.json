@@ -1,0 +1,10 @@
+{
+  "xauth": "125d4d9f45154c68b994cb448d510c24",
+  "crmConnectionString": "Server=CRMSRV01;Database=ARC-Nmlos;User Id=CRM;Password=CRM1crm;",
+  "carWashConnectingString": "Server=cows020\\MSSQLSERVER01;Database=CarWash;Integrated Security=true;",
+  "hourForUpdatingData": "5",
+  "updateDaysAgo": "50",
+  "forceUpdatingYear": "2021",
+  "forceUpdatingMonth": "2"
+
+}

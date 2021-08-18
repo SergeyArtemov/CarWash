@@ -1,0 +1,12 @@
+C:\car-wash-master\car-wash-master\CarWash.Database\bin\Debug\netcoreapp3.1\CarWash.Database.deps.json
+C:\car-wash-master\car-wash-master\CarWash.Database\bin\Debug\netcoreapp3.1\CarWash.Database.dll
+C:\car-wash-master\car-wash-master\CarWash.Database\bin\Debug\netcoreapp3.1\CarWash.Database.pdb
+C:\car-wash-master\car-wash-master\CarWash.Database\bin\Debug\netcoreapp3.1\Nm.Dal.dll
+C:\car-wash-master\car-wash-master\CarWash.Database\bin\Debug\netcoreapp3.1\Nm.Dal.pdb
+C:\car-wash-master\car-wash-master\CarWash.Database\obj\Debug\netcoreapp3.1\CarWash.Database.csproj.AssemblyReference.cache
+C:\car-wash-master\car-wash-master\CarWash.Database\obj\Debug\netcoreapp3.1\CarWash.Database.AssemblyInfoInputs.cache
+C:\car-wash-master\car-wash-master\CarWash.Database\obj\Debug\netcoreapp3.1\CarWash.Database.AssemblyInfo.cs
+C:\car-wash-master\car-wash-master\CarWash.Database\obj\Debug\netcoreapp3.1\CarWash.Database.csproj.CoreCompileInputs.cache
+C:\car-wash-master\car-wash-master\CarWash.Database\obj\Debug\netcoreapp3.1\CarWash.Database.csproj.CopyComplete
+C:\car-wash-master\car-wash-master\CarWash.Database\obj\Debug\netcoreapp3.1\CarWash.Database.dll
+C:\car-wash-master\car-wash-master\CarWash.Database\obj\Debug\netcoreapp3.1\CarWash.Database.pdb

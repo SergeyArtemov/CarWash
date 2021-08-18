@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<style>
+    label {
+        width: 15%;
+    }
+</style>
+
+<form method="post">
+    <div class="text-left">
+        <label for="month">Начало периода&nbsp;</label>
+        <input type="month" id="date-start" name="date-start" value="@DateTime.Now.AddMonths(-1).ToString("yyyy-MM")" min="2020-01-01T00:00" max="2022-01-01T00:00">
+    </div>
+
+    <div class="text-left">
+        <label for="month">Конец периода&nbsp;</label>
+        <input type="month" id="date-end" name="date-end" value="@DateTime.Now.ToString("yyyy-MM")" min="2020-01-01T00:00" max="2022-01-01T00:00">
+    </div>
+
+    <div class="text-center">
+        <input type="submit" value="Рассчитать" />
+    </div>
+</form>
